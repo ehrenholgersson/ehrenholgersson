@@ -26,7 +26,7 @@ Fairly simple Hangman game made for TAFE to demonstrate saving settings and game
 ### Unnamed Space Game 
 2D game where you can build and fly custom space ships between different planets and (hopefully one day) solar systems. 
 
-This is a long term project that I have been working on for some time. I'm trying to focus my efforts on smaller things that can be built quickly to develop my portfolio right now but this game is my baby and I struggle to put it down for any length of time.
+This is a long term project that I have been working on for some time. I'm trying to focus my efforts on smaller things that can be built quickly to develop my portfolio right now, but this project is my baby and I struggle to put it down for any length of time.
 
 Currently you can build your own ships and fly between 3 planets, there are AI traders that fly between the planets and pirates that will attack them.
 
