@@ -11,13 +11,7 @@ Most of my repositories are projects I created for a Certificate IV in Game Deve
 
 Originally started as something totally different at TAFE, but it got sidetracked and turned into its own thing. I plan to add more level pieces, sounds and a difficulty curve, then polish it up a bit and maybe release on itch.io to gain experience in the process of actually releasing something.
 
-<iframe
-  id="GameBuild"
-  title="Current build"
-  width="854"
-  height="480"
-  src="https://ehrenholgersson.github.io/ShapeGame/">
-</iframe>
+[![The Game](https://ehrenholgersson.github.io/ShapeGame/)](https://ehrenholgersson.github.io/ShapeGame/)
 
 ### [Smashformer](https://github.com/ehrenholgersson/Group-Project---Game-Design)
 2D fighting game somewhat inspired by Smash Brothers done as a group project in TAFE. All code by myself.
