@@ -21,14 +21,16 @@
                     <img class="projecticon" src="./media/icons/discordlogo.png"onclick="OpenTab('https://discordapp.com/users/310688033873592321')">
                 </div>
             </div>
-            <div class="button" id="about" onclick="LoadFrame('./about.html')">
-                <p>About</p>
-            </div>
-            <div class="button"id="portfolio"onclick="LoadFrame('./projects.html')">
-                <p>Projects</p>
-            </div>
-            <div class="button"id="blog"onclick="LoadFrame('./updates.html')">
-                <p>Updates</p>
+            <div id="sidebarbuttons">
+                <div class="button" id="about" onclick="LoadFrame('./about.html')">
+                    <p>About</p>
+                </div>
+                <div class="button"id="portfolio"onclick="LoadFrame('./projects.html')">
+                    <p>Projects</p>
+                </div>
+                <div class="button"id="blog"onclick="LoadFrame('./updates.html')">
+                    <p>Updates</p>
+                </div>
             </div>
         </div>
         <iframe id="content" src="./about.html" ></iframe>
