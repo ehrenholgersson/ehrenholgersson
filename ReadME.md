@@ -4,6 +4,8 @@ I'm Ehren,
 
 Most of my repositories are projects I created for a Certificate IV in Game Development and programming at TAFE.
 
+I now have a web page attached to this profile, you can view it at [ehrenholgersson.github.io/ehrenholgersson](ehrenholgersson.github.io/ehrenholgersson)
+
 ## Some of My Projects
 
 ### [Shape Skirmishes](https://github.com/ehrenholgersson/ShapeGame)
