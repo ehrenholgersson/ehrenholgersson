@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ehren's Portfolio (Work In Progress)</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body background="">
+        <div id="shapegamepop" class="projectpopover" popover="auto">        
+            <iframe class="unitygame" src="https://ehrenholgersson.github.io/ShapeGame/NoBar.html"width="970" height="610">
+            </iframe>
+        </div>
+        <div id="placeholderpop" class="projectpopover" popover="auto">        
+            <iframe class="unitygame" src="./about.html"width="970" height="610">
+            </iframe>
+        </div>
+        <div id="smashvidpop" class="projectpopover" popover="auto">        
+            <iframe class="unitygame" width="970" height="610" src="https://www.youtube.com/embed/C9T-NC0CB38?si=A-Jm4HYxtRwB8x55" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </iframe>
+        </div>
+        <div id="aividpop" class="projectpopover" popover="auto">        
+            <iframe class="unitygame" width="970" height="610" src="https://www.youtube.com/embed/e1h11nMClWg?si=ZcxuxW_iROhUE9cK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </iframe>
+        </div>
+        <h1>Some of My Projects<br><br></h1>
+        <div id ="projectgrid" class="pagecontents">
+            <div class="projectcard" >
+                <img class="projectbackground" src="./media/square.gif">
+                <div class="linkicons">
+                    <img class="projecticon" src="./media/icons/playlogo.png" onclick="PopToggle('shapegamepop')">
+                    <img class="projecticon" src="./media/icons/gitlogo.png"onclick="OpenTab('https://github.com/ehrenholgersson/ShapeGame')">
+                    <img class="projecticon" src="./media/icons/itchlogo.png"onclick="OpenTab('https://ehren-holgersson.itch.io/shape-skirmish?secret=J44jPRtbD4sV760lRtKRn3dO4k')">
+                </div>
+                <div class="projecttext">
+                    <h2>Shape Skirmish</h2>
+                    <p>
+                        Endless 2D platformer inspired by Geometry Dash / The Impossible Game. Name inspired by Geometry Wars because I always mix that up with Geometry Dash!<br><br>
+                        Originally started as something totally different at TAFE, but it got sidetracked and turned into its own thing. I plan to add some more polish, more terrain sections, sound, and a difficulty curve, then release on itch.io and google play to gain experience in the process of actually releasing something.
+                    </p>
+
+                </div>
+            </div>
+            <div class="projectcard">
+                <img class="projectbackground" src="./media/Img_One.png">
+                <div class="linkicons">
+                    <img class="projecticon" src="./media/icons/gitlogo.png"onclick="OpenTab('https://github.com/ehrenholgersson/HangMan2D_Game_Systems_Intro_To_Programming')">
+                </div>
+                <div class="projecttext">
+                    <h2>Picnic in the Park</h2>
+                    <p>
+                        Fairly simple Hangman game made for TAFE to demonstrate saving settings and game progress as well as use of canvas UI. 2D Game created with a 3D background made from Unity's terrain system (and a number of free assets from the asset store).
+                    </p>
+                </div>
+            </div>
+            <div class="projectcard">
+                <img class="projectbackground" src="./media/SpaceMontage.gif">
+                <div class="linkicons">
+                    <img class="projecticon" src="./media/icons/doclogo.png">
+                </div>
+                <div class="projecttext">
+                    <h2>Untitled Space Game</h2>
+                    <p>
+                        2D game where you can build and fly custom space ships between different planets and (hopefully one day) solar systems. <br><br>
+                        This is a long term project that I have been working on for some time. I'm trying to focus my efforts on smaller things that can be built quickly to develop my portfolio right now but this game is my baby and I struggle to put it down for any length of time.<br><br>                     
+                        Currently you can build your own ships and fly between 3 planets, there are AI traders that fly between the planets and pirates that will attack them.<br><br>
+                        Multiplayer is partially implemented.
+                    </p>
+                </div>
+            </div>
+            <div class="projectcard">
+                <img class="projectbackground" src="./media/Smash.png">
+                <div class="linkicons">
+                    <img class="projecticon" src="./media/icons/tubelogo.png" onclick="PopToggle('smashvidpop')">
+                    <img class="projecticon" src="./media/icons/gitlogo.png"onclick="OpenTab('https://github.com/ehrenholgersson/Group-Project---Game-Design')">
+                </div>
+                <div class="projecttext">
+                    <h2>Smashformer</h2>
+                    <p>2D fighting game somewhat inspired by Smash Brothers, done as a group project in TAFE. All code by myself.</p>
+                </div>
+            </div>
+            <div class="projectcard">
+                <img class="projectbackground" src="./media/Solo.png">
+                <div class="linkicons">
+                    <img class="projecticon" src="./media/icons/tubelogo.png"onclick="PopToggle('aividpop')">
+                    <img class="projecticon" src="./media/icons/gitlogo.png"onclick="OpenTab('https://github.com/ehrenholgersson/AI-Maze-Assessment')">
+                </div>
+                <div class="projecttext">
+                    <h2>Solo Man's Quest<br>for the Volcano Idol</h2>
+                    <p>
+                    Another TAFE project. This was to demonstrate use of Unity NavMesh agents to navigate a maze. I went beyond the requirements of the brief to develop a full gameplay loop (although there is no player input as one of the nav agents assumes the protagonist/player role).<br><br>
+                    Our AI protagonist is tasked with navigating the level to reach his goal at the top of a volcano, avoiding a pursuing ogre and several patrolling spiders, deciding along the way if he is brave enough to risk grabing additional treasures in spite of the danger.<br><br>
+                    Assets from the unity store are used.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function PopToggle(id)
+        {
+        var target = document.getElementById(id);
+        target.showPopover();
+        }
+        function OpenTab(url)
+        {
+            window.open(url, '_blank').focus();
+        }
+    </script>
+</html>

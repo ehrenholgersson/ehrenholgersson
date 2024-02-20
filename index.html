@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>Ehren Holgersson</title>
+</head>
+
+<body>
+    <div id="page">
+        <div id="sidebar">    
+            <div id ="profile">
+                <div>
+                <img src="./media/profile.jpg" id ="profilepic">
+                </div>
+                <div id ="name">Ehren Holgersson<br>Unity/C# Dev<br>Experienced Tech Support Engineer<br>IRATA Level 1</div>
+                <div id = "contacts">
+                    <img class="projecticon" src="./media/icons/maillogo.png"onclick="OpenTab('mailto:ehrenholgersson@gmail.com')">
+                    <img class="projecticon" src="./media/icons/gitlogo.png"onclick="OpenTab('https://www.github.com/ehrenholgersson')">
+                    <img class="projecticon" src="./media/icons/itchlogo.png"onclick="OpenTab('https://ehren-holgersson.itch.io/')">
+                    <img class="projecticon" src="./media/icons/linlogo.png"onclick="OpenTab('https://www.linkedin.com/in/ehren-holgersson-57a24826b/')">
+                </div>
+            </div>
+            <div class="button" id="about" onclick="LoadFrame('./about.html')">
+                <p>About</p>
+            </div>
+            <div class="button"id="portfolio"onclick="LoadFrame('./projects.html')">
+                <p>Projects</p>
+            </div>
+            <div class="button"id="blog"onclick="LoadFrame('./updates.html')">
+                <p>Updates</p>
+            </div>
+        </div>
+        <iframe id="content" src="./about.html" ></iframe>
+        <div id="footer">
+            <p>&#169 2024 Ehren Holgersson</p>
+        </div>
+
+        <script>
+            var frame = document.getElementById("content");
+            function LoadFrame(target)
+            {
+                {frame.src = target;}
+            }
+            function OpenTab(url)
+            {
+                window.open(url, '_blank').focus();
+            }
+        </script>
+    </div>
+</body>
+</html>
