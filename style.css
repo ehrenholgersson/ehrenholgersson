@@ -22,13 +22,15 @@ iframe{border: none;}
 .projectcard:hover > .projecttext {opacity: 1;transition-duration: 0.4s;}
 .projectbackground {grid-row: 1/-1;grid-column: 1/-1;height: 100%;width: 100%;}
 .projecttext {grid-column: 1/-1;grid-row: 2/-1;opacity: 0;background-color:  rgba(30, 20, 20, 0.7);justify-self: center;align-self: center;height: 100%;width: 100%;overflow-y:auto;}
-.projectpopover {width: minmax(max-content,80%);}
+.projectpopover {min-width: max-content;max-width:80%;overflow-y: hidden;border: 0cap;padding: 0%;border-radius: 2%;background-color: rgba(0,0,0,0);}
+.documentpopover {max-width: 70rem; width: auto; height: 85%;overflow-y: hidden;border: 0cap;padding: 0%;border-radius: 2%;opacity: 0.95;}
 .linkicons {grid-row: 1/-3;grid-column: 1/-1;background-color:  rgba(30, 20, 20, 0.7);display: flex;justify-content: space-around;opacity: 0;height: 1fr;max-height: 50%;}
 .projectcard:hover >.linkicons {opacity: 1;transition-duration: 0.4s;}
 .projecticon {opacity: 0.3;overflow: hidden;max-height: 100%;aspect-ratio: 1/1;min-width: 0;max-width: 100%;}
 .projecticon:hover {opacity: 1;transition-duration: 0.4s;}
 .updateheading {font-size: 2rem;}
 .updatedatetime {font-style: italic;font-size: 1.5rem;}
+.popupdocument {width: 100%; height: 100%;margin: 0;}
 
 @media all and (max-width: 1024px) {
     #sidebar {display: flex;flex-direction:column;justify-content: space-between ; height:min-content; width:  100%;align-items: stretch;}
